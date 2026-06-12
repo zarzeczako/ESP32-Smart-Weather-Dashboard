@@ -23,7 +23,7 @@ Lokalny interfejs użytkownika został zbudowany w oparciu o bibliotekę LVGL (v
 Urządzenie uruchamia niezależny serwer WWW na porcie 80. Po wpisaniu adresu IP urządzenia w sieci lokalnej ESP32 dynamicznie generuje i serwuje responsywną stronę HTML/CSS w trybie Dark Mode. Pozwala to na podgląd parametrów stacji z poziomu dowolnego urządzenia mobilnego bez wpływu na działanie lokalnego GUI.
 
 <p align="center">
-  <img src="pics/siteinterface.png" width="700">
+  <img src="pics/siteinterface.png" width="300">
 </p>
 
 ## 3. Specyfikacja sprzętowa i połączenia (Pinout)
@@ -31,7 +31,7 @@ Urządzenie uruchamia niezależny serwer WWW na porcie 80. Po wpisaniu adresu IP
 Urządzenie wykorzystuje mikrokontroler ESP32 oraz komunikację za pomocą magistral SPI i I2C. Kontroler dotyku został odseparowany na dedykowany kanał HSPI w celu wyeliminowania konfliktów transmisji.
 
 <p align="center">
-  <img src="pics/50ec50a7-1a0d-413f-b983-7020026007c4.jpg" width="600">
+  <img src="pics/50ec50a7-1a0d-413f-b983-7020026007c4.jpg" width="350">
 </p>
 
 
