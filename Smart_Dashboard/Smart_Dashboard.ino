@@ -17,8 +17,8 @@
 #include <Adafruit_BMP280.h> 
 
 // ================= USTAWIENIA SIECI =================
-const char* ssid = "iPhone";
-const char* password = "12345678";
+const char* ssid = "CHANGE_ME";
+const char* password = "CHANGE_ME";
 const char* timezone = "Europe/Warsaw";
 
 // ================= ZMIENNE GLOBALNE =================
