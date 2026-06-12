@@ -14,27 +14,26 @@ System wyróżnia się architekturą nieblokującą – przetwarzanie procesów 
 
 Lokalny interfejs użytkownika został zbudowany w oparciu o bibliotekę LVGL (v9.x). Dane prezentowane są w ustrukturyzowanej tabeli parametrów z implementacją dynamicznego systemu modyfikacji motywu wizualnego. Kolorystyka nagłówków oraz wierszy parzystych dostosowuje się automatycznie do aktualnej temperatury otoczenia.
 
-![Lokalny ekran terminala](pics/0325ab02-bbb1-4918-a93f-3a3d97d2f472.jpg)
+<p align="center">
+  <img src="pics/0325ab02-bbb1-4918-a93f-3a3d97d2f472.jpg" width="350">
+</p>
 
 ### Asynchroniczny serwer HTTP i interfejs webowy
 
 Urządzenie uruchamia niezależny serwer WWW na porcie 80. Po wpisaniu adresu IP urządzenia w sieci lokalnej ESP32 dynamicznie generuje i serwuje responsywną stronę HTML/CSS w trybie Dark Mode. Pozwala to na podgląd parametrów stacji z poziomu dowolnego urządzenia mobilnego bez wpływu na działanie lokalnego GUI.
 
-![Interfejs mobilny serwera WWW](pics/siteinterface.png)
-
-### Integracje sieciowe i parsowanie danych
-
-* **Bitcoin Live Ticker:** Pobieranie aktualnego kursu BTC/USDT z API Binance.
-* **Konwersja walut:** Pobieranie kursów USD, EUR oraz GBP z Open Exchange Rates i przeliczanie ich wartości na PLN przy wykorzystaniu struktur JSON.
-* **Synchronizacja czasu:** Klient NTP UDP pobierający aktualny czas z uwzględnieniem strefy Europe/Warsaw i zmiany czasu letniego.
-
----
+<p align="center">
+  <img src="pics/siteinterface.png" width="700">
+</p>
 
 ## 3. Specyfikacja sprzętowa i połączenia (Pinout)
 
 Urządzenie wykorzystuje mikrokontroler ESP32 oraz komunikację za pomocą magistral SPI i I2C. Kontroler dotyku został odseparowany na dedykowany kanał HSPI w celu wyeliminowania konfliktów transmisji.
 
-![Widok połączeń i peryferiów](pics/50ec50a7-1a0d-413f-b983-7020026007c4.jpg)
+<p align="center">
+  <img src="pics/50ec50a7-1a0d-413f-b983-7020026007c4.jpg" width="600">
+</p>
+
 
 ### Wykaz połączeń interfejsów sprzętowych
 
